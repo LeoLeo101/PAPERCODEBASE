@@ -924,6 +924,46 @@ NetLogo 6.4.0
       <value value="600"/>
     </enumeratedValueSet>
   </experiment>
+  <experiment name="sensitivityAnalysis" repetitions="1" runMetricsEveryStep="true">
+    <setup>setup</setup>
+    <go>go</go>
+    <exitCondition>ticks &gt;= 3000</exitCondition>
+    <metric>meanVOl</metric>
+    <metric>volatility-indicator</metric>
+    <metric>returns</metric>
+    <metric>log-price</metric>
+    <enumeratedValueSet variable="bh-min-hold">
+      <value value="0"/>
+      <value value="100"/>
+      <value value="200"/>
+      <value value="500"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="sigma">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="max-news-sensitivity">
+      <value value="0.25"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="miu">
+      <value value="0.01"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="share-buy-hold">
+      <value value="0.1"/>
+      <value value="0.3"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="max-base-propensity-to-sentiment-contagion">
+      <value value="0.25"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="market-depth">
+      <value value="50000"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="bh-max-hold">
+      <value value="100"/>
+      <value value="600"/>
+      <value value="1100"/>
+      <value value="1600"/>
+    </enumeratedValueSet>
+  </experiment>
 </experiments>
 @#$#@#$#@
 @#$#@#$#@
